@@ -22,8 +22,3 @@ return [
 
 ];
 ```
-
-### Install
-```
-composer create-project jimmitjoo/social-foundation your-project-dir
-```
