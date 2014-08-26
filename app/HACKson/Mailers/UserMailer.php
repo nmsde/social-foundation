@@ -9,6 +9,7 @@
 namespace HACKson\Mailers;
 
 use HACKson\Users\User;
+use Lang;
 
 class UserMailer extends Mailer {
 
