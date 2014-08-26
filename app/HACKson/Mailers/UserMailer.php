@@ -14,7 +14,7 @@ class UserMailer extends Mailer {
 
     public function sendWelcomeMessageTo(User $user)
     {
-        $subject = 'Välkommen till Social!';
+        $subject = Lang::get('default.Welcome To') . ' ' . Lang::get('default.Sitename') . '!';
         $view = 'emails.registration.confirm';
         $data = [];
 
