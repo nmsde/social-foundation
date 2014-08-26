@@ -8,7 +8,8 @@ Social Foundation is a social platform based on PHP. It has got very much inspir
 The platform has multi language support out of the box, nothing is written outside the languagefiles which you can find in app/lang.
 
 To set up you will need to set some environment variables. Create an .env.php in the root of the project.
-```<?php
+```
+<?php
 
 return [
 
@@ -19,4 +20,5 @@ return [
 
     'ini_set' => ini_set('xdebug.max_nesting_level', 200) // If you just have 100 the codecept won't work.
 
-];```
+];
+```
