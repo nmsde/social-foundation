@@ -5,23 +5,27 @@ Route::get('/', [
     'uses' => 'PagesController@home'
 ]);
 
+
+/**
+ * Sign up
+ */
 Route::get('register', [
     'as' => 'register_path',
     'uses' => 'RegistrationController@create'
 ]);
-
 Route::post('register', [
     'as' => 'register_path',
     'uses' => 'RegistrationController@store'
 ]);
 
 
-
+/**
+ * Authentication
+ */
 Route::get('login', [
     'as' => 'login_path',
     'uses' => 'SessionsController@create'
 ]);
-
 Route::post('login', [
     'as' => 'login_path',
     'uses' => 'SessionsController@store'
@@ -32,6 +36,9 @@ Route::get('logout', [
 ]);
 
 
+/**
+ * Statuses
+ */
 Route::get('statuses', [
     'as' => 'statuses_path',
     'uses' => 'StatusesController@index'
@@ -42,6 +49,9 @@ Route::post('statuses', [
 ]);
 
 
+/**
+ * User related
+ */
 Route::get('users', [
     'as' => 'users_path',
     'uses' => 'UsersController@index'
@@ -53,6 +63,9 @@ Route::get('@{username}', [
 ]);
 
 
+/**
+ * Following
+ */
 Route::post('follows', [
     'as' => 'follow_path',
     'uses' => 'FollowersController@store'
@@ -63,4 +76,7 @@ Route::delete('follows/{id}', [
 ]);
 
 
+/**
+ * Remind me about password
+ */
 Route::controller('password', 'RemindersController');
