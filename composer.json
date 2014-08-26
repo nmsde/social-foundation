@@ -1,7 +1,7 @@
 {
 	"name": "jimmitjoo/social-foundation",
 	"description": "Social Foundation is a Laravel based platform for social networking.",
-	"keywords": ["social", "social network", "php social network", "php social platform", "social platform"],
+	"keywords": ["social foundation", "social", "social network", "php social network", "php social platform", "social platform"],
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.2.*",
