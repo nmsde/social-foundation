@@ -52,7 +52,7 @@ class StatusRepositoryTest extends \Codeception\TestCase\Test
         $user = TestDummy::create('HACKson\Users\User');
 
         // When I try to persist this status
-        $savedStatus = $this->repo->save($status, $user->id);
+        $this->repo->save($status, $user->id);
 
         // Then it should be saved
         // And the status should have the correct user_id
