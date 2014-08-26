@@ -1,0 +1,25 @@
+<?php
+
+use Faker\Factory as Faker;
+use HACKson\Statuses\Status;
+use HACKson\Users\User;
+
+class StatusesTableSeeder extends Seeder {
+
+	public function run()
+	{
+		$faker = Faker::create();
+
+        $usersIds = User::lists('id');
+
+		foreach(range(1, 1000) as $index)
+		{
+			Status::create([
+                'user_id' => $faker->randomElement($usersIds),
+                'body' => $faker->sentence(),
+                'created_at' => $faker->dateTime()
+			]);
+		}
+	}
+
+}

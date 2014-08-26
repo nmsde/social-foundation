@@ -1,0 +1,11 @@
+@import 'modules/status';
+@import 'modules/nav';
+@import 'pages/user';
+
+body{
+  padding-top: 70px;
+}
+
+.container h1:first-of-type {
+  margin-top: 0;
+}
