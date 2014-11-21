@@ -18,7 +18,5 @@ return [
     'DB_PASS' => 'passwd',      // Database password
     'DB_NAME' => 'dbname',      // Database name
 
-    'ini_set' => ini_set('xdebug.max_nesting_level', 200) // If you just have 100 the codecept won't work.
-
 ];
 ```
